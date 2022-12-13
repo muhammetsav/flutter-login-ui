@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_ui/components/my_textfield.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -17,11 +18,20 @@ class LoginPage extends StatelessWidget {
 
             // wellcome back,you've been missed!
             Text("Wellcome back, you've been missed!",
-                style: TextStyle(color: Colors.grey[700]))
+                style: TextStyle(
+                  color: Colors.grey[700],
+                  fontSize: 16.0,
+                )),
+            const SizedBox(height: 25),
 
             // username textfield
 
+            const MyTextField(),
+            const SizedBox(height: 10),
+
             // password textfield
+
+            const MyTextField(),
 
             // forgot password?
 
